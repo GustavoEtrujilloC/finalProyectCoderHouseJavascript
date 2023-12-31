@@ -1,0 +1,54 @@
+[
+    {
+        "id":  1,
+        "name": "Fc 24",
+        "price": 60,
+        "plataforma": "Playstation 5",
+        "company": "EA Sports",
+        "description": "lorem ipsum dolor sit amet, consectetur adip",
+        "discount": "30%",
+        "image": "./assets/img/fifa24.webp"
+
+    },
+
+    {
+        "id":  2,
+        "name": "Call Of Duty: Modern Warfare 3",
+        "price": 60,
+        "plataforma": "Playstation 5",
+        "company": "Activision",
+        "description": "lorem ipsum dolor sit amet, consectetur adip",
+        "discount": "40%",
+        "image": "./assets/img/callofduty.webp"
+
+    },
+
+    {
+        "id":  3,
+        "name": "Assassins Creed® Mirage",
+        "price": 40,
+        "plataforma": "Playstation 5",
+        "company": "Ubisoft",
+        "description": "lorem ipsum dolor sit amet, consectetur adip",
+        "discount": "10%",
+        "image": "./assets/img/acm.webp"
+
+    },
+
+    {
+        "id":  4,
+        "name": "Battlefield 2042",
+        "price": 20,
+        "plataforma": "Playstation 5",
+        "company": "Electronic Arts",
+        "description": "lorem ipsum dolor sit amet, consectetur adip",
+        "discount": "80%",
+        "image": "./assets/img/battlefield.webp"
+
+    }
+
+    
+
+
+
+]

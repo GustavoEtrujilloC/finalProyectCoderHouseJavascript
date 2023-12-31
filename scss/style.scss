@@ -1,0 +1,27 @@
+@forward "./base/reset";
+@forward "./base/base";
+@forward "./layout/header";
+@forward "./layout/modal_menu_device";
+@forward "./layout/gallery";
+@forward "./layout/details-product";
+@forward "./layout/modal_shopping_cart";
+@forward "./layout/modal_gallery";
+@forward "./layout/store";
+@forward './layout/media-query';
+
+
+.cart-modal {
+    display: none;
+}
+
+.modal-gallery__background {
+    display: none;
+}
+
+.modal-navbar__background {
+    display: none;
+}
+
+.show {
+    display: block;
+}

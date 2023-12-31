@@ -1,0 +1,118 @@
+@use "../utilities/variables" as c;
+
+.details {
+    padding: .9375rem;
+    &__company {
+        font-size: .875rem;
+        font-weight: 700;
+        letter-spacing: .0313rem;
+        margin: .625rem 0;
+        }
+        &__title {
+            font-size: 1.625rem;
+            font-weight: bold;
+            letter-spacing: .0625rem;
+            margin: .3125rem 0;
+        }
+        &__description{
+            font-weight: 400;
+            text-align: justify;
+            letter-spacing: .0313rem;
+        }
+        &__prices {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            margin: 1.875rem 1.25rem;
+        }
+        &__now {
+            font-size: 1.5rem;
+            font-weight: bold;
+            letter-spacing: .0625rem;
+        }
+        &__discount {
+            font-size: .75rem;
+            font-weight: 100;
+            margin-left: .625rem;
+            background-color: c.$orange;
+            padding: .1875rem;
+            color: c.$red;
+            border-radius: .3125rem;
+        }
+
+        &__before {
+            font-size: 1.375rem;
+            color: c.$back;
+            text-decoration: line-through;
+        }
+
+        .details__product-quantity {
+            width: 100%;
+            
+            .input {
+
+                margin: .9375rem 0;
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                .input__minus{
+                    width: 3rem;
+                    height: 3rem;
+                    &:hover{
+                        cursor: pointer;
+                    }
+                    &:active {
+                        transform: scale(1.05,1.05);
+                    }
+                }
+                .input__plus{
+                    width: 3rem;
+                    height: 3rem;
+                    &:hover{
+                        cursor: pointer;
+                    }
+                    &:active {
+                        transform: scale(1.05,1.05);
+                    }
+                }
+                .input__number {
+                    width:100%;
+                    text-align: center;
+                    border: none;
+                    font-size: 1rem;
+                    font-weight: 700;
+                }
+            }
+            .details__button {
+                display: flex;
+                transition: 0.3s ease-in-out;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                width:100%;
+                height: 3.75rem;
+                background-color: c.$orange;
+                border: none;
+                border-radius: 1.25rem;
+                color: c.$white;
+                font-size: 1.125rem;
+                font-weight: 500;
+                &:hover {
+                    background-color: c.$black !important;
+                    cursor: pointer;                   
+                }
+                &:active {
+                    transform: scale(1.05,1.05);
+                }
+
+                
+                
+                
+            }
+            
+        }
+
+}

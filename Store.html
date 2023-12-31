@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Tienda</title>
+</head>
+<body>
+  <main class="main-container">
+    <header class="header">            
+        <!-- Header Desktop -->
+        <div class="header__container">
+            <div class="header__logo-container" alt="logo_gt_digital_games"></div>
+            <nav class="navbar">
+                <ul class="navbar__items">
+                    <li class="navbar__item">
+                        <a class="navbar__link" href="/index.html">inicio</a></li>
+                    <li class="navbar__item">
+                        <a class="navbar__link" href="#">tienda</a></li>
+                    <li class="navbar__item">
+                        <a class="navbar__link" href="#">ps4</a></li>
+                    <li class="navbar__item">
+                        <a class="navbar__link" href="#">contacto</a></li>
+                    <li class="navbar__item">
+                        <a class="navbar__link" href="#">preguntas Frecuentes</a></li>
+                </ul>
+            </nav>
+            <!-- cart and avatar desktop -->
+            <div class="header-cart__cart">
+                <div class="header-cart__cart--notification">0</div>
+                <img class="header-cart__cartImg" src="./assets/img/cart.svg" alt="cart_shopping">
+                <img class="header-cart__avatarImg" src="./assets/img/user.svg" alt="user_avatar">
+                <img class="header__menu" src="./assets/img/menu.svg" alt="menu_img"> <!-- Menu for movil -->
+                </div>
+            </div>
+            <!--Final cart and avatar desktop -->   
+        <!-- Final Header Desktop -->
+
+        <!-- Modal Navbar menu for a movil divices. -->
+        <div class="modal-navbar__background">
+            <nav class="modal-navbar">
+                <img class="modal-navbar__close-icon" src="./assets/img/close.svg" alt="close_menu">
+                <ul class="modal-navbar__items">
+                    <li><a class="modal-navbar__link" href="#">inicio</a></li>
+                    <li><a class="modal-navbar__link" href="#">tienda</a></li>
+                    <li><a class="modal-navbar__link" href="#">ps4</a></li>
+                    <li><a class="modal-navbar__link" href="#">contacto</a></li>
+                    <li><a class="modal-navbar__link" href="#">preguntas Frecuentes</a></li>
+                </ul>
+            </nav>
+        </div>
+        <!-- Final Modal -->
+
+
+    </header>
+    <section id="storeppal" class="contenedor-store">
+        <div class="header-store">
+          <h1>Tienda de Juegos Digitales</h1>
+        </div>
+        <div class="background_img"></div> <!-- imagen fixed -->
+        <section class="container_card" id="container_card">
+          <div id="tienda"></div>
+
+        </section>
+        <section class="carrito" id="carrito">
+          <h1 class="h1Carrito">Carrito</h1>
+          <h2 class="h2Carrito">Juegos en el carrito</h2>
+          <p class="pCarrito">Total a pagar: <span id="totalJuegos"></span></p>
+          <button class = "vaciar" id = "vaciar">Vaciar Carrito</button>
+          <button id="buy" class="buyBtn">Comprar</button>
+          <ul id="listaJuegos"></ul>
+        </section>
+    </section>
+  </div> 
+
+
+
+  
+
+
+
+
+
+</body>
+<script src="js/main_store.js"></script>
+
+
+</html>

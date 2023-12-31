@@ -1,0 +1,84 @@
+@use "../utilities/variables" as c;
+
+.cart-modal {
+    width: 18.75rem;
+    height: auto;
+    backdrop-filter: blur(20px);
+    border-radius: 1.875rem;
+    box-shadow: rgba(0,0,0,0.3);
+    position: absolute;
+    top: 15%;
+    right: .625rem;
+    border: .0625rem solid rgba(255,255,255,0.3);
+    padding: .625rem .9375rem;
+
+    
+    
+
+    &__title {
+        color: c.$white;
+        text-shadow: .0625rem .0625rem .25rem c.$black;
+        font-size: 1.125rem;
+        letter-spacing: .0625rem;
+        font-weight: bold;
+        margin: 1.25rem 0;
+    }
+    &__product-container {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: center;
+        background-color: c.$black;
+        border: .0313rem solid rgba(255,255,255,0.3);
+        border-radius: 1.25rem;
+        margin-bottom: .625rem;
+    }
+    &__product-name {
+        
+        color: c.$white;
+        font-size: 1rem;
+        text-shadow: .0625rem .0625rem .125rem c.$black;
+    }
+    &__checkout-container {
+        width: 100%;
+    }
+    &__details-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        color: c.$white;
+        text-shadow: .0625rem .0625rem .125rem c.$black;
+        
+    }
+    &__resume {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: c.$white;
+        text-shadow: .0625rem .0625rem .125rem c.$black;
+        gap: .9375rem;
+        text-align: center;
+        font-size: .875rem;
+    }
+
+    &__checkout {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: .9375rem .3125rem;
+        width:100%;
+        height: 1.875rem;
+        background-color: c.$orange;
+        border: none;
+        border-radius: 1.25rem;
+        color: c.$white;
+        font-size: 1rem;
+        font-weight: 300;
+        align-items: center;
+        &__hover {
+            background-color: c.$black;
+            cursor: pointer;
+    }
+} 
+
+}

@@ -1,0 +1,309 @@
+.contenedor-store {
+    padding: 3.125rem;
+    background-image: url("/assets/img/fondo_tienda.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .contenedor-store .header-store h1 {
+    width: 100%;
+    height: 9.375rem;
+    position: relative;
+    padding: 0;
+    margin: auto;
+    font-weight: 900;
+    font-size: 2.5rem;
+    color: #f4f4f4;
+    text-align: center;
+    text-shadow: 6px 6px 8px black;
+    animation: textoH1 2s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+  }
+  .contenedor-store .background_img {
+    margin: auto;
+    background-image: url("../assets/img/controlblancops5.jpg");
+    width: 60%;
+    height: 9.375rem;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 0.625rem;
+    box-shadow: 0 0 0.75rem 1rem rgb(255, 255, 255);
+  }
+
+  .container_card {
+    position: relative;
+    width: 90%;
+    height: 100%;
+    padding: 6.25rem 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    gap: 3.125rem;
+  }
+  .container_card .card {
+    background-color: #1b1521;
+    width: 21.875rem;
+    height: 31.25rem;
+    position: relative;
+    border-radius: 1.25rem;
+    overflow: hidden;
+    transition: 1s ease-in-outg;
+  }
+  .container_card .card::before {
+    content: "";
+    position: absolute;
+    background-color: #ff8826;
+    width: 100%;
+    height: 100%;
+    clip-path: circle(9.375rem at 20% 5%);
+    transition: 1s ease-in-out;
+  }
+  .container_card .card:hover {
+    box-shadow: 0.125rem 0.1875rem 0.625rem 1rem white;
+  }
+  .container_card .card:hover .imgBx {
+    top: 0;
+    transform: translateY(0);
+  }
+  .container_card .card:hover .contentBx {
+    height: 15.625rem;
+  }
+  .container_card .card:hover .contentBx .consola {
+    opacity: 1;
+    visibility: visible;
+  }
+  .container_card .card:hover .contentBx .price {
+    opacity: 1;
+    visibility: visible;
+  }
+  .container_card .card:hover .contentBx a {
+    opacity: 1;
+  }
+  .container_card .card:hover::before {
+    clip-path: circle(300px at 80% -20%);
+  }
+  .container_card .card .imgBx {
+    z-index: 10;
+    position: absolute;
+    top: 25%;
+    width: 100%;
+    height: 50%;
+    transition: 1s;
+    transform: translateY(-40%);
+  }
+  .container_card .card .imgBx img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 12.5rem;
+    height: 11.25rem;
+    object-fit: cover;
+    border-radius: 1.25rem;
+    transform: translate(-50%, -50%) rotate(-10deg);
+  }
+  .container_card .card .contentBx {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 45%;
+    text-align: center;
+    transition: 1s;
+  }
+  .container_card .card .contentBx h2 {
+    font-weight: bold;
+    letter-spacing: 0.0625rem;
+    color: #f4f4f4;
+    font-size: 1.375rem;
+  }
+  .container_card .card .contentBx .consola {
+    display: flex;
+    transform: translateY(3.75rem);    
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem 0;
+    transition: 0.5s;
+    opacity: 0;
+    visibility: hidden;
+  }
+  .container_card .card .contentBx  .consola, h3 {
+    color: #f4f4f4;
+    font-weight: bold;
+    font-size: 1.125rem;
+    text-transform: uppercase;
+    letter-spacing: 0.125rem;
+    margin-right: 0;
+  }
+  .container_card .card .contentBx .consola span {
+    width: auto;
+    height: auto;
+    padding: 0.0625rem 0.1875rem;
+    text-align: center;
+    line-height: 1.5rem;
+    font-size: 0.875rem;
+    display: inline-block;
+    color: #f4f4f4;
+    background-color: black;
+    border-radius: 0.25rem;
+    margin: 0.125rem 0;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+  .container_card .card .contentBx .consola span:hover {
+    color: #1b1521;
+    background-color: #f03813;
+  }
+  .container_card .card .contentBx .price {
+    width: 100%;
+    color: #f4f4f4;
+    font-size: 1.375rem;
+    
+    opacity: 0;
+    visibility: hidden;
+  }
+  .container_card .card .contentBx .price span {
+    width: 100%;
+    color: #b31237;
+    font-size: 1.125rem;
+    padding: 0.0625rem 0.125rem;
+    cursor: auto;
+    background-color: transparent;
+  }
+  .container_card .card a {
+    margin: 0;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    display: inline-block;
+    padding: 0.625rem 1.875rem;
+    background-color: #b31237;
+    border-radius: 0.25rem;
+    text-decoration: none;
+    font-weight: bold;
+    color: #f4f4f4;
+    font-size: 1.125rem;
+    transform: translateY(3.125rem);
+    transition: 0.5s;
+    opacity: 0;
+    cursor: pointer;
+  }
+  .container_card .card a:hover  {
+    background-color: #ff8826;
+    box-shadow: 0.0625rem 0.0625rem 0.3125rem 0.3125rem rgb(204, 195, 195);
+  }
+
+  .vaciar {
+    
+    margin: 0;
+    text-align: center;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    display: inline-block;
+    padding: 0.625rem 1.875rem;
+    background-color: #b31237;
+    border-radius: 0.25rem;
+    text-decoration: none;
+    font-weight: bold;
+    color: #f4f4f4;
+    font-size: 1.125rem;
+    transition: 0.5s;
+    
+  }
+
+  .vaciar:hover {
+    background-color: #ff8826;
+    box-shadow: 0.0625rem 0.0625rem 0.3125rem 0.3125rem rgb(204, 195, 195);
+    cursor: pointer;
+  }
+
+  .h2Carrito {
+    font-weight: bold;
+    letter-spacing: 0.0625rem;
+    color: #f4f4f4;
+    font-size: 1.375rem;
+  }
+
+  .h1Carrito {
+    width: 100%;
+    
+    position: relative;
+    padding: 0;
+    margin: auto;
+    font-weight: 900;
+    font-size: 2.5rem;
+    color: #f4f4f4;
+    text-align: center;
+    text-shadow: 6px 6px 8px black;
+    animation: textoH1 2s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+  }
+
+  .pCarrito {
+    font-weight: bold;
+    color: #f4f4f4;
+    font-size: 1.125rem;
+    text-align: center;
+  }
+
+  .carrito {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .9375rem;
+    backdrop-filter: blur(1.5625rem);
+    padding: 1.875rem;
+    border-radius: .9375rem;
+    border: solid 1px rgba(255, 255, 255, 0.3);
+  }
+
+  span {
+    font-weight: bold;
+    color: #f4f4f4;
+    font-size: 1.125rem;
+    text-align: center;
+  }
+
+  .cartStyle{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: .9375rem;
+  }
+
+  .titleGame {
+    font-size: 1rem;
+    color: white;
+    letter-spacing: .0625rem;
+  }
+
+  .cartPrice {
+    font-size: 1rem;
+    color: white;
+    letter-spacing: .0625rem;
+
+  }
+
+  .cartimg {
+    width: 3.125rem;
+    height: 3.125rem
+  }
+
+  .cartPlataforma {
+    font-size: 1rem;
+    color: white;
+    letter-spacing: .0625rem;
+  }

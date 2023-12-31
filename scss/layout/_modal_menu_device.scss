@@ -1,0 +1,53 @@
+@use "../utilities/variables" as c;
+
+
+
+.modal-navbar__background {
+    
+        background-color: c.$back;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 10;
+
+        .modal-navbar {
+            padding: 1.25rem 0 0 1.25rem;
+            background-color: c.$black;
+            width: 50%;
+            height: 100%;
+            &__close-icon {
+                width: 2rem;
+                height: 2rem;
+                margin: .625rem;
+            }
+            &__items {
+                list-style: none;
+                height: 30%;
+                display: flex;
+                margin-left: 1.25rem;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: start;
+                font-size: 1rem;
+                transition: 0.5s ease-in-out;
+                font-weight: 400;
+                margin-top: 1.25rem;
+                color: c.$white;
+                text-transform: uppercase;
+                &:hover {
+                    transform: translateY(-0.125rem);
+                }
+            }
+            &__link {
+                text-decoration: none;
+                color: c.$white;
+
+                
+
+            }
+            
+        }
+        
+}
